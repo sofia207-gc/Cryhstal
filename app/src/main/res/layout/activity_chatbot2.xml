@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@color/fondo1"
+    tools:context=".Chatbot">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="APODO, ¿DE QUÉ TE GUSTARÍA HABLAR HOY?"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Botón 'Tengo mi propio tema' -->
+    <Button
+        android:id="@+id/btn_propio_tema"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#3F51B5"
+        android:layout_gravity="center"
+        android:text="TENGO MI PROPIO TEMA"
+        android:textColor="@color/fondo1"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Grid de botones -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_propio_tema">
+
+        <!-- Botón 1 -->
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#3F51B5"
+            android:layout_gravity="center_horizontal"
+            android:text="HABLAR SOBRE MI DÍA"
+            android:textColor="@color/white" />
+
+        <!-- Botón 2 -->
+        <Button
+            android:layout_width="118dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#3F51B5"
+            android:layout_gravity="center_horizontal"
+            android:text="HABLAR DE MI VIDA O AMIGOS"
+            android:textColor="@color/white" />
+
+        <!-- Botón 3 -->
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#3F51B5"
+            android:layout_gravity="center_horizontal"
+            android:text="SOLO QUIERO DESAHOGARME"
+            android:textColor="@color/white" />
+
+        <!-- Barra inferior -->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_propio_tema">
+
+        <!-- Botón 4 -->
+        <Button
+            android:layout_width="112dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#3F51B5"
+            android:text="QUIERO RECIBIR UN CONSEJO"
+            android:textColor="@color/white" />
+
+        <!-- Botón 5 -->
+        <Button
+            android:layout_width="113dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#3F51B5"
+            android:text="TENGO UNA EMOCIÓN INTENSA"
+            android:textColor="@color/white" />
+
+        <!-- Botón 6 -->
+        <Button
+            android:layout_width="113dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#3F51B5"
+            android:text="DESEO HABLAR DE MI VIDA AMOROSA"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grid_botones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_propio_tema">
+
+
+        <Button
+            android:layout_width="124dp"
+            android:layout_height="109dp"
+            android:backgroundTint="#3F51B5"
+            android:text="QUIERO CAMBIAR MI FORMA DE SENTIR O PENSAR"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="118dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#3F51B5"
+            android:text="HABLAR SOBRE MI AUTOESTIMA"
+            android:textColor="@color/white" />
+
+        <!-- Botón 9 -->
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#3F51B5"
+            android:text="REDUCIR MI ANSIEDAD O ESTRÉS"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>
